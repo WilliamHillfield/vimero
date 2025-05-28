@@ -1,16 +1,52 @@
 <!DOCTYPE html>
-<html>
+<html lang="fi">
 <head>
-  <title>Vimero – Kirjaudu sisään</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Vimero – Kirjaudu</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      max-width: 400px;
+      margin: 5vh auto;
+      padding: 1rem;
+    }
+    h1 {
+      text-align: center;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+    input {
+      padding: 12px;
+      font-size: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+    button {
+      padding: 12px;
+      font-size: 1rem;
+      background: #0077cc;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #005fa3;
+    }
+  </style>
 </head>
 <body>
-  <h1>Vimero</h1>
-  <p>Ville Mäkipellon somekavana</p>
+  <h1>Kirjaudu Vimeroon</h1>
   <form id="loginForm">
-    <input type="text" id="name" placeholder="Nimesi" required><br>
-    <input type="password" id="password" placeholder="Salasana" required><br>
+    <input id="name" type="text" placeholder="Nimi" required>
+    <input id="password" type="password" placeholder="Salasana" required>
     <button type="submit">Kirjaudu</button>
   </form>
-  <script src="script.js"></script>
+
+  <script src="script.js?v=6"></script>
 </body>
 </html>
